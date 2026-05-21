@@ -1,0 +1,5 @@
+2026-05-21 11:46:08,518 - DEBUG - Detailed diagnostic information.
+2026-05-21 11:46:08,518 - INFO - Confirmation that things are working.
+2026-05-21 11:46:08,518 - WARNING - An unexpected issue occurred.
+2026-05-21 11:46:08,519 - INFO - Entered the data ingestion method or component
+2026-05-21 11:46:08,520 - ERROR - Error occurred in file: C:\Users\ygman\sml_project\src\components\data_injestion.py at line: 22 with error message: [Errno 2] No such file or directory: 'notebook/data\\raw_data.csv'

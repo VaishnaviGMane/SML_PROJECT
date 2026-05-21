@@ -1,0 +1,5 @@
+2026-05-21 11:45:34,435 - DEBUG - Detailed diagnostic information.
+2026-05-21 11:45:34,435 - INFO - Confirmation that things are working.
+2026-05-21 11:45:34,435 - WARNING - An unexpected issue occurred.
+2026-05-21 11:45:34,451 - INFO - Entered the data ingestion method or component
+2026-05-21 11:45:34,453 - ERROR - Error occurred in file: C:\Users\ygman\sml_project\src\components\data_injestion.py at line: 22 with error message: [Errno 2] No such file or directory: 'notebook/data\\stud.csv'
