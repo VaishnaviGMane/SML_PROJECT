@@ -1,0 +1,8 @@
+2026-05-26 11:04:38,523 - DEBUG - Detailed diagnostic information.
+2026-05-26 11:04:38,523 - INFO - Confirmation that things are working.
+2026-05-26 11:04:38,523 - WARNING - An unexpected issue occurred.
+2026-05-26 11:04:46,351 - INFO - Model trainer pipeline is initiated
+2026-05-26 11:04:46,351 - INFO - Entered the data ingestion method or component
+2026-05-26 11:04:46,466 - ERROR - Error occurred in file: C:\Users\ygman\sml_project\src\components\data_ingestion.py at line: 22 with error message: [Errno 2] No such file or directory: 'notebook/data\\stud.csv'
+2026-05-26 11:04:46,466 - ERROR - Error occurred in file: C:\Users\ygman\sml_project\src\components\model_trainer.py at line: 25 with error message: Error occurred in file: C:\Users\ygman\sml_project\src\components\data_ingestion.py at line: 22 with error message: [Errno 2] No such file or directory: 'notebook/data\\stud.csv'
+2026-05-26 11:04:46,467 - ERROR - Error occurred in file: C:\Users\ygman\sml_project\src\pipeline\trainer_pipeline.py at line: 14 with error message: Error occurred in file: C:\Users\ygman\sml_project\src\components\model_trainer.py at line: 25 with error message: Error occurred in file: C:\Users\ygman\sml_project\src\components\data_ingestion.py at line: 22 with error message: [Errno 2] No such file or directory: 'notebook/data\\stud.csv'

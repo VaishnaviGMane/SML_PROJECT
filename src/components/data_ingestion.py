@@ -19,25 +19,10 @@ class DataIngestion():
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            # Try common source locations for the raw dataset
-            candidate_paths = [
-                os.path.join('notebook', 'data', 'stud.csv'),
-                os.path.join('notebook', 'data', 'raw_data.csv'),
-                self.ingestion_config.raw_data_path,
-                os.path.join('raw_data.csv'),
-            ]
+            df = pd.read_csv(os.path.join('notebook/data', 'stud.csv'))
+            logging.info("Read the dataset as dataframe")
 
-            df = None
-            tried = []
-            for p in candidate_paths:
-                tried.append(p)
-                if os.path.exists(p):
-                    df = pd.read_csv(p)
-                    logging.info("Read the dataset from %s", p)
-                    break
-
-            if df is None:
-                raise FileNotFoundError(f"No dataset found. Tried: {tried}")
+            df["total_score"] = df["math score"] + df["reading score"] + df["writing score"]
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
 
